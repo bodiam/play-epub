@@ -1,0 +1,95 @@
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+body {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    min-width: 970px;
+}
+
+body {
+    background:url(../img/bg.png);
+    padding-bottom:40px;
+    padding-top:40px;
+}
+
+p.post-date {
+    color:#777;
+    font-size:smaller;
+}
+
+div.well {
+    background: #fff;
+}
+
+.form-actions {
+    background: inherit;
+}
+
+img.avatar {
+    float: left;
+    margin-right: 1.5em;
+}
+
+.comment {
+    min-height: 100px;
+}
+
+ul.links {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+hr {
+    border-top:1px solid #ccc;
+}
+
+.nav-pills > li > a,.nav-pills > li > a:hover {
+    background:inherit;
+    color:#333;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    padding:0 6px 18px;
+}
+
+.nav-pills > .active > a,.nav-pills > .active > a:hover {
+    background:inherit;
+    border-bottom:1px solid #333;
+    color:#333;
+    font-weight:700;
+    padding:0 6px 18px;
+}
+
+div.pagination ul {
+    background:#fff;
+}
+
+#content div.thumbnail {
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    background:#fff;
+    padding:0;
+}
+
+#content div.thumbnail > div.category {
+    background:#222;
+    color:#eee;
+    font-size:smaller;
+    font-style:italic;
+    padding:10px;
+}
+
+#content div.thumbnail > div.category > a,#content div.thumbnail > div.category > a:hover {
+    color:#eee;
+}
+
+#content div.thumbnail > div.caption {
+    line-height:1.2;
+    padding:13px;
+}
+
+#content div.thumbnail > div.caption hr {
+    border-style:dotted;
+}
