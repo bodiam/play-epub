@@ -1,7 +1,7 @@
-Modern Web Template
+Play Epub
 ===========
 
-**AngularJS - Scala - Play - Guice - PlayReactiveMongo**
+**AngularJS - Scala - Play - Guice - PlayReactiveMongo - ElasticSearch**
 
 A full application stack for a Modern Web application, lets review the components:
 
@@ -23,6 +23,9 @@ fronted with Twitter bootstrap CSS framework, because well, im not a web designe
 
 * **PlayReactiveMongo** gives interaction with MongoDB providing a non-blocking driver as well as some useful additions for handling JSON.
   * Check out their GitHub: [Play-ReactiveMongo](https://github.com/ReactiveMongo/Play-ReactiveMongo)
+
+* **ElasticSearch** backend storage as a replacement for MongoDB.
+  * See GitHub: [Play2-ElasticSearch](https://github.com/cleverage/play2-elasticsearch)
 
 
 

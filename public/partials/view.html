@@ -2,16 +2,10 @@
 
     <div class="row" ng-controller="UserCtrl as uc">
         &NonBreakingSpace;
-<!--
-        <div class="jumbotron">
-            <h2>A Modern Web Template</h2>
-
-            <p class="pull-right">... a UI created using AngularJS and Bootstrap</p>
-        </div>
--->
 
         <div class="container" id="content">
             <!-- https://github.com/sixfootsixdesigns/Bootstrap-3-Grid-Columns-Clearing -->
+            <!-- http://stackoverflow.com/questions/19595706/twitter-bootstrap-3-same-height-fluid-grid-layout -->
             <div class="row multi-columns-row">
                 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3" ng-repeat="usr in uc.users | filter:searchText">
                     <div class="thumbnail">
@@ -29,25 +23,6 @@
 
 
         <div class="row">
-<!--
-            <div class="form-group">
-                <h3>
-                    Users
-                    <a ng-href="/#/users/create" class="btn btn-primary pull-right" id="btn_user_create">Add User</a>
-                </h3>
-                <hr>
-            </div>
--->
-<!--
-            <div class="form-group">
-                <input class="form-control" type="text" ng-model="searchText" placeholder="Type here to filter Users...">
-                <hr>
-            </div>
--->
-
-            <!-- http://stackoverflow.com/questions/19595706/twitter-bootstrap-3-same-height-fluid-grid-layout -->
-
-
             <table id="user_list" class="table table-striped">
                 <thead>
                 <tr>
