@@ -22,7 +22,7 @@ angular.module('myApp.routeConfig', ['ngRoute'])
                 templateUrl: '/assets/partials/create.html'
             })
             .when('/books/create', {
-                templateUrl: '/assets/partials/createBook.html'
+                templateUrl: '/assets/partials/book/create.html'
             })
             .otherwise({redirectTo: '/'})
 
