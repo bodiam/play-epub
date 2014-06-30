@@ -1,0 +1,88 @@
+<div class="row">
+    <div ng-controller="CreateBookCtrl as cbc">
+        <h1>Create Book</h1>
+
+        <form id="CreateBookForm" name="CreateBookForm" class="form-horizontal" role="form"
+              ng-submit="cbc.createUser()">
+            <legend class="sm-col-12">Basic Information</legend>
+
+            <div class="form-group">
+                <label id="lbl_title" for="title" class="col-sm-4 control-label">Title</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" name="title" id="title" placeholder="Title" ng-model="cbc.book.title">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label id="lbl_author" for="author" class="col-sm-4 control-label">Author</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" name="author" id="author" placeholder="Author" ng-model="cbc.book.author.name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label id="lbl_language" for="language" class="col-sm-4 control-label">Language</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" name="language" id="language" placeholder="Language" ng-model="cbc.book.language">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label id="lbl_isbn10" for="isbn10" class="col-sm-4 control-label">Isbn 10</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" name="isbn10" id="isbn10" placeholder="Isbn 10" ng-model="cbc.book.isbn10">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label id="lbl_isbn13" for="isbn13" class="col-sm-4 control-label">Isbn 13</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" name="isbn13" id="isbn13" placeholder="Isbn 13" ng-model="cbc.book.isbn13">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label id="lbl_summary" for="summary" class="col-sm-4 control-label">Summary</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" name="summary" id="summary" placeholder="Summary" ng-model="cbc.book.summary">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label id="lbl_publication-date" for="publication-date" class="col-sm-4 control-label"
+                       is-required="CreateUserForm.age">Publication Date</label>
+
+                <div class="col-sm-8">
+                    <input type="date" class="form-control" name="publication-date" id="publication-date" ng-model="cbc.book.publicationDate">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label id="lbl_file" for="file" class="col-sm-4 control-label">File</label>
+
+                <div class="col-sm-8">
+                    <input type="file" class="form-control" name="file" id="file" ng-model="cbc.book.file">
+                </div>
+            </div>
+
+            <pre>{{ CreateBookCtrl }}</pre>
+            <pre>{{ cbc.book | json }}</pre>
+
+            <div class="form-group">
+                <div class="col-sm-offset-4 col-sm-8 text-right">
+                    <a ng-href="/#/" id="btn_cancel" class="btn btn-warning">Cancel</a>
+
+                    <button type="submit" class="btn btn-success" id="btn_create">Create Book</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
