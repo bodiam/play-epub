@@ -9,7 +9,9 @@ case class User(age: Int,
 
 case class Book(source: String, title: String, language: String,
                 isbn10: String, isbn13: String, summary: String, contents: String, publisher: String,
-                publicationDate: Date, dateAdded: Date, numberOfPages: Int, authors: Seq[Author] /*, tags: Seq[Tag]*/)
+                publicationDate: Date, dateAdded: Date, numberOfPages: Int /*, authors: Seq[Author] , tags: Seq[Tag] */ )
+
+//case class Book(title: String, author:String, publicationDate: Date)
 
 case class Author(name: String)
 
