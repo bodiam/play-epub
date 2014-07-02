@@ -1,6 +1,9 @@
 Play Epub
 ===========
 
+[![Build Status](https://travis-ci.org/bodiam/play-epub.svg?branch=master)](https://travis-ci.org/bodiam/play-epub)
+
+
 **AngularJS - Scala - Play - Guice - PlayReactiveMongo - ElasticSearch**
 
 A full application stack for a Modern Web application, lets review the components:
