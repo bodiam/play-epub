@@ -10,4 +10,4 @@ install:
   - wget ${ACTIVATOR_ZIP_URL}
   - unzip -q ${ACTIVATOR_ZIP_FILE}
 script:
-  - "cd $TRAVIS_BUILD_DIR/code && ${ACTIVATOR_BIN} test"
+  - "cd $TRAVIS_BUILD_DIR/booksearch && ${ACTIVATOR_BIN} test"
