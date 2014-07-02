@@ -58,7 +58,5 @@ class BooksIT extends Specification {
         result.header.status mustEqual BAD_REQUEST
       }
     }
-
   }
-
 }
